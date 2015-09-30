@@ -1,0 +1,58 @@
+h1 {
+  font-size: 4em;
+  letter-spacing: 1px;
+  color: #66CCFF;
+  text-align: center;
+}
+
+h2 {
+  color: #CC9900;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+text-align: center;
+  position: relative;
+  color: #66CCFF;
+  font-size: 3em;
+}
+
+p {
+font-size: 2em;
+position: relative;
+color: #0063A6;
+}
+
+#display{
+text-align: center;
+display: none;
+}
+
+#picture{
+	text-align: center;
+	position: fixed;
+  	bottom: 0;
+  	right: 0;
+  	width: 470px;
+}
+
+#display.show{
+	display: block;
+}
+
+.button {
+			background-color: #CC9900;
+			border: 3px solid #66CCFF;
+			border-radius: 5px;
+			padding: 30px;
+			width: 175px;
+			cursor: pointer;
+			margin:0px auto
+		}
+		.button.hover {
+			background-color: #66CCFF;
+		}
+		.button.hide{
+			display: none;
+		}
