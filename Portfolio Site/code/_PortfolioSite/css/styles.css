@@ -1,0 +1,329 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* 
+ * Base Rules
+ *
+ A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudo-classes. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+ *
+ */
+/* fonts */
+
+    @font-face{
+        font-family:"Carrington";
+        src:url("../fonts/Carrington-webfont.woff");
+        src:url("../fonts/Carrington-webfont.woff") format("woff");
+    }
+
+ 
+/* Fonts */
+/* Colors */
+/* Colors + Use Cases */
+/* Responsive Breakpoints */
+/* Default Padding */
+/* Widths */
+/* mixins */
+body {
+  /*background-color: #eee;*/
+  color: #111;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: "400"; }
+
+/*head{
+    background-image: url(".../img/Header.png"); 
+}*/
+
+h1 {
+  color: black;
+  font-family: "Carrington";
+  font-size: 4em;
+  font-weight: "300";
+}
+
+h2 {
+  color: #333;
+  font-size: 1.75em;
+  font-weight: "400"; }
+
+h3 {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: "500"; }
+
+h4 {
+  color: #333;
+  font-size: 1.25em;
+  font-weight: "700"; }
+
+h5 {
+  color: #333; }
+
+p {
+  color: #004A97;
+  font-size: 1em; }
+
+a {
+  color: #333;
+  text-decoration: none !important;
+  }
+
+a:hover
+{
+  color: black;
+
+}
+
+img {
+  width: 100%; }
+
+img.home {
+  width: 7%;
+  position: fixed;
+  top:9px;
+  padding-left: 10px; }
+
+img.sign {
+  position: fixed;
+  height: 55px;
+  width: 160px;
+  bottom: 14px;
+  right: 14px;
+}
+
+img.footer {
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  left: 0; 
+  border-top: 10px solid black;
+}
+
+img.logomain {
+  width: 40%;
+  margin-top: -115px;
+  margin-bottom: -90px;
+}
+
+div.logomain {
+  text-align: center;
+}
+
+
+
+/* 
+ * Layout Rules
+ *
+ The major components, such as header, footer, articles.
+ *
+ */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+nav li {
+  display: inline;
+  height: 30px;
+  margin-left: 10px; }
+
+
+
+.l-constrained {
+  max-width: 650px;
+  margin: 0 auto; }
+
+.l-fluid {
+  max-width: 90%; }
+
+.top-bann {
+  color: #1C1C1C;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.lock-up {
+  position: relative;
+}
+
+#img, #lit, #mov {
+  position: absolute;
+}
+#img {
+  right: 150px;
+  top: 170px;
+}
+#lit {
+  left: 250px;
+  top: 170px;
+}
+#mov {
+  left: 50%;
+  margin-left: -60px;
+  bottom: -40px;
+}
+
+/* 
+ * Module Rules
+ *
+ A Module is a more discrete component of the page. It is your navigation bars and your carousels and your 
+ dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. 
+ Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a 
+ standalone component.
+ *
+ */
+ .header {
+  width: 100%;
+}
+
+.header header {
+  background: url("../img/Header.png") no-repeat; 
+  height: 100px;
+  border-bottom: 10px solid black;
+}
+
+.header h1 {
+  text-align: center;
+  padding-top: 12px;
+}
+.button {
+  /*background-color: #a1a1a1;*/
+  cursor: pointer;
+  font-family: "Carrington";
+  font-size: 2.5em;
+  display: block;
+  padding: 20px;
+  width: 200px;
+  height: 68px; }
+
+/* menu */
+.post h2 {
+  text-transform: uppercase; }
+
+/* 
+ * State Rules
+ A state is something that augments and overrides all other styles. For example, an accordion section may be in a collapsed or expanded state. A message may be in a success or error state.
+ *
+ */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+
+}
+/* Tablet */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Mobile */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  div.logomain {
+    padding-top: 100px;
+  }
+  #img {
+    left: 80px;
+  }
+  #lit {
+    right: 0px;
+  }
+  #mov {
+    left: 50%;
+    margin-left: -60px;
+    bottom: -40px;
+  }
+}
+/* Smaller Mobile */
+@media only screen and (max-width: 767px) {
+  #img {
+    left: 0px;
+  }
+  #lit {
+    right: 0px;
+  }
+  #mov {
+    left: 50%;
+    margin-left: -60px;
+    bottom: -40px;
+  }
+}
+/* Specific Mobile Device Media Queries */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+
+}
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (device-aspect-ratio: 375 / 667) {
+  #screen_iPhone6 {
+    display: block; } }
+/* ----------- Galaxy S5 / Android ----------- */
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  #screen_GalaxyS5 {
+    display: block; } }
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (device-aspect-ratio: 40 / 71) {
+  #screen_iPhone5 {
+    display: block; } }
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (device-aspect-ratio: 2 / 3) {
+  #screen_iPhone4 {
+    display: block; } }
+.error {
+   }
+
+.ok {
+  background-color: #00ff00; }
+
+
