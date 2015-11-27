@@ -60,9 +60,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         src:url("../fonts/Carrington-webfont.woff") format("woff");
     }
 
+    @font-face {
+    font-family: 'windsongregular';
+    src: url('../fonts/Windsong-webfont.eot');
+    src: url('../fonts/Windsong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Windsong-webfont.woff') format('woff'),
+         url('../fonts/Windsong-webfont.ttf') format('truetype'),
+         url('../fonts/Windsong-webfont.svg#windsongregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    }
+
+    @font-face {
+    font-family: 'alegreya_scitalic';
+    src: url('../fonts/alegreyasc-italic-webfont.eot');
+    src: url('../fonts/alegreyasc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alegreyasc-italic-webfont.woff2') format('woff2'),
+         url('../fonts/alegreyasc-italic-webfont.woff') format('woff'),
+         url('../fonts/alegreyasc-italic-webfont.ttf') format('truetype'),
+         url('../fonts/alegreyasc-italic-webfont.svg#alegreya_scitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    }
+
+
+    @font-face {
+    font-family: 'alegreya_scregular';
+    src: url('../fonts/alegreyasc-regular-webfont.eot');
+    src: url('../fonts/alegreyasc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alegreyasc-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alegreyasc-regular-webfont.woff') format('woff'),
+         url('../fonts/alegreyasc-regular-webfont.ttf') format('truetype'),
+         url('../fonts/alegreyasc-regular-webfont.svg#alegreya_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    } 
+
+
+    @font-face {
+    font-family: 'alegreya_scbold';
+    src: url('../fonts/alegreyasc-bold-webfont.eot');
+    src: url('../fonts/alegreyasc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alegreyasc-bold-webfont.woff2') format('woff2'),
+         url('../fonts/alegreyasc-bold-webfont.woff') format('woff'),
+         url('../fonts/alegreyasc-bold-webfont.ttf') format('truetype'),
+         url('../fonts/alegreyasc-bold-webfont.svg#alegreya_scbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    }
+
  
 /* Fonts */
+
 /* Colors */
+
+    /* #111, #333, black*/
+
 /* Colors + Use Cases */
 /* Responsive Breakpoints */
 /* Default Padding */
@@ -71,7 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   /*background-color: #eee;*/
   color: #111;
-  font-family: "Raleway", sans-serif;
+  font-family: "alegreya_scregular";
   font-size: 16px;
   font-weight: "400"; }
 
@@ -109,15 +166,8 @@ p {
   font-size: 1em; }
 
 a {
-  color: #333;
   text-decoration: none !important;
   }
-
-a:hover
-{
-  color: black;
-
-}
 
 img {
   width: 100%; }
@@ -163,17 +213,6 @@ div.logomain {
  The major components, such as header, footer, articles.
  *
  */
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-nav li {
-  display: inline;
-  height: 30px;
-  margin-left: 10px; }
-
-
 
 .l-constrained {
   max-width: 650px;
@@ -193,9 +232,18 @@ nav li {
   position: relative;
 }
 
+.lock-up a {
+  color: #333;
+}
+
+.lock-up a:hover{
+  color: black;
+}
+
 #img, #lit, #mov {
   position: absolute;
 }
+
 #img {
   right: 150px;
   top: 170px;
@@ -219,20 +267,52 @@ nav li {
  standalone component.
  *
  */
- .header {
+
+nav{
+  font-family: "Carrington";
+  position: fixed;
+  bottom: 25px;
+  padding-left: 10px;
+  display: inline;
+}
+
+.nav-current{
+  font-size: 2.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+.nav a{
+  color: white; 
+  display: inline;
+}
+
+.top {
   width: 100%;
 }
 
-.header header {
+.header-H header {
   background: url("../img/Header.png") no-repeat; 
   height: 100px;
   border-bottom: 10px solid black;
 }
 
-.header h1 {
+.header-H h1 {
   text-align: center;
   padding-top: 12px;
 }
+.header-L header {
+  background: url("../img/LIT-header.png") no-repeat;
+  height: 100px;
+  border-bottom: 10px solid black;
+}
+
+.header-L h1 {
+  padding-top: 12px;
+  padding-left: 130px;
+}
+
 .button {
   /*background-color: #a1a1a1;*/
   cursor: pointer;
@@ -243,9 +323,29 @@ nav li {
   width: 200px;
   height: 68px; }
 
+.nav-button{
+  cursor: pointer;
+  font-family: "Carrington";
+  font-size: 2.5em;
+  display: block;
+  padding: 10px;
+  width: 200px;
+  height: 68px; 
+}
+
 /* menu */
 .post h2 {
   text-transform: uppercase; }
+
+.footer-p {
+  width: 100%;
+  background-color: #222222; 
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  height: 100px; 
+  border-top: 10px solid black;
+}
 
 /* 
  * State Rules
