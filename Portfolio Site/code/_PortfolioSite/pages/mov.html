@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Larysa Irene - Lit</title>
+        <title>Larysa Irene - Mov</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -15,16 +15,31 @@
         <link rel="stylesheet" href="../css/styles.css">
         <!--endbuild-->
 
-         <!--FancyBox-->
+        <!--FancyBox-->
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
         <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
         <script type="text/javascript" src="../js/fancybox/jquery.fancybox.pack.js"></script>
+
+        <!-- Owl Carousel1 -->
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
+         
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
+
+
+        <!-- Owl Carousel2 -->
+        <!-- <link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../owlcarousel/owl.carousel.css">
+        <link rel="stylesheet" href="../owlcarousel/owl.theme.default.min.css"> -->
+
+
     </head>
     <body>
         <div class="container header-L top">
             <div class="row">
                 <header class="col-md-12">
-                    <h1>Literature</h1>
+                    <h1>Movies</h1>
                     <!-- <img src="img/Header.png" alt="Header Photo" /> -->
                     <a href="../index.html">
                         <img class= "home" src="../img/Logo.gif" alt="LOGO"/>
@@ -33,58 +48,34 @@
             </div>
         </div>
 
-        <div class="container main-Lit">
-            <div class="row">
-                <div class="col-md-6 poetry">
-                    <h2 id="poetrytitle">Poetry</h2>
-                    <div class="poetrypost">
-                        <a id="poem" href="../img/sonnet 2.png" title="Sonnet 2">
-                            <img class="poetrypic" src="../img/sonnet 2.png" alt="sonnet2">
-                            <div class="poetry-texts">
-                                Sonnet 2
-                                <br>
-                                2015
-                            </div>
-                        </a>
-                    </div>
+        <div class="container movieplayer">
+           <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <iframe class="play4" src="https://www.youtube.com/embed/udlS79yDYxU" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="play3" src="https://www.youtube.com/embed/MyFcxOaAbYA" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="play2" src="https://www.youtube.com/embed/8HWAf-i8mcA" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="play1" src="https://www.youtube.com/embed/Wd_8EPxUw38" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-2">
+                </div>
+           </div>
+        </div> 
 
-                    
-                    <br>
-                    <div class="poetrypost">
-                        <img class="poetrypic" src="../img/The Yip Yip.png" alt="the yip yip">
-                        <div class="poetry-texts">
-                            The Yip Yip
-                            <br>
-                            2014
-                        </div>
+        <div class="container navbar">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div id="owl-demo" class="owl-carousel">
+                      <a class="item link v4"><img src="../img/BF.png" alt="Owl Image"></a>
+                      <a class="item link v3"><img src="../img/ONSRA-1.png" alt="Owl Image"></a>
+                      <a class="item link v2"><img src="../img/ONSRA-2.png" alt="Owl Image"></a>
+                      <a class="item link v1"><img src="../img/stefs.png" alt="Owl Image"></a>
                     </div>
                 </div>
-                <div class="midlit">
-                    Worlds fall weak to words
-                    <br>
-                    There's a power to language
-                    <br>
-                    That no one escapes  .
-                </div>
-                <div class="col-md-6 prose">
-                    <h2 id="prosetitle">Prose</h2>
-                    <div class="prosepost">
-                        <img class="prosepic" src="../img/The Fireplace-cover.png" alt="the fireplace essay">
-                        <div class="prose-texts">
-                            The Fireplace
-                            <br>
-                            2014
-                        </div>
-                    </div>
-                    <br>
-                    <div class="prosepost">
-                        <img class="prosepic" src="../img/Believing the Impossible-cover.png" alt="belieivng the impossible essay">
-                        <div class="prose-texts">
-                            Believing the Impossible
-                            <br>
-                            2015
-                        </div>
-                    </div>
+                <div class="col-md-3">
                 </div>
             </div>
         </div>
@@ -92,26 +83,29 @@
         <footer class="footer-p">
           <!--<img class= "footer" src="../img/Footer.png" alt="Footer Photo"/>-->
             <nav class="nav">
+                <a href="lit.html" target="_self" class="nav-button">Lit</a>
+                <a href="img.html" target="_self" class="nav-button">Img</a>
                 <div class="nav-current">
-                    Lit
+                    Mov
                 </div>
-                <a href="index.img.html" target="_self" class="nav-button">Img</a>
-                <a href="index.mov.html" target="_self" class="nav-button">Mov</a>
             </nav>
-            <a href="index.about.html">
+            <a href="about.html">
                 <img class= "sign" src="../img/sign-w.png" alt="signature, about"/>
             </a>
         </footer>
-        <!-- /container -->  
+        <!-- /container --> 
+
+        <!-- OwlCarousel 1 -->
+        <!-- Include js plugin -->
+
+        <!-- endbuild -->
+
         <!--build:js js/main.min.js-->      
         <script src="../js/vendor/jquery-1.11.2.min.js"></script>
         <script src="../js/vendor/bootstrap.min.js"></script>
-        <script src="../js/main.js"></script>
-
+        
+         
         <!-- FancyBox -->
-          <!-- Add jQuery library -->
-          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
           <!-- Add mousewheel plugin (this is optional) -->
           <script type="text/javascript" src="../js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -127,5 +121,14 @@
           <link rel="stylesheet" href="../js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
           <script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
         <!-- endbuild -->
+
+        <script src="../owl-carousel/owl.carousel.js"></script>
+
+         <script src="../js/main.js"></script>
+
+
+        <!-- OwlCarousel2 -->
+        <!--<script src="../owlcarousel/owl.carousel.min.js"></script>-->
+
     </body>
 </html>

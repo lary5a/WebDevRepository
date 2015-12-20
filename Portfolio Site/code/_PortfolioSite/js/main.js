@@ -61,16 +61,63 @@
         //     } else{
         //         $this.css('background','#7fc242').addClass('clicked');
         //     }
-        // });
+        // }); 
+
+        $("#owl-demo-img").owlCarousel({
+ 
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true
+     
+          // "singleItem:true" is a shortcut for:
+          // items : 1, 
+          // itemsDesktop : false,
+          // itemsDesktopSmall : false,
+          // itemsTablet: false,
+          // itemsMobile : false
+ 
+         });
 
         $("#owl-demo").owlCarousel({
  
-          autoPlay: 3000, //Set AutoPlay to 3 seconds
+          // autoPlay: 3000, //Set AutoPlay to 3 seconds
      
-          items : 4,
+          items : 3,
           itemsDesktop : [1199,3],
           itemsDesktopSmall : [979,3]
      
+        });
+
+       
+
+
+        $('.link').on('click', function(event){
+            var $this = $(this);
+            if($this.hasClass('v4')){
+                $(".play4").show();
+                $(".play3").hide();
+                $(".play2").hide();
+                $(".play1").hide();
+            }
+            if($this.hasClass('v3')){
+                $(".play3").show();
+                $(".play4").hide();
+                $(".play2").hide();
+                $(".play1").hide();
+            }
+            if($this.hasClass('v2')){
+                $(".play2").show();
+                $(".play3").hide();
+                $(".play4").hide();
+                $(".play1").hide();
+            }
+            if($this.hasClass('v1')){
+                $(".play1").show();
+                $(".play3").hide();
+                $(".play2").hide();
+                $(".play4").hide();
+            }
         });
 
     });

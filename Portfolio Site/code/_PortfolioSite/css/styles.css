@@ -168,11 +168,11 @@ p {
 
 a {
   text-decoration: none !important;
-  color: inherit;
+  color: black;
   }
 
 a:hover{
-  color: inherit;
+  color: black;
 }
 
 img {
@@ -519,7 +519,10 @@ nav{
 }*/
 
 #owl-demo .item{
-  margin: 3px;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 #owl-demo .item img{
   display: block;
@@ -527,12 +530,44 @@ nav{
   height: auto;
 }
 
+#owl-demo .item:hover{
 
-#play4{
-  width: 100%;
-  height: fill;
 }
 
+#owl-demo-img .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 7em;
+}
+
+.play4, .play3, .play2, .play1{
+  width: 100%;
+  height: 350px;
+  margin-top: 7em;
+  /*margin-bottom: 1em;*/
+}
+
+.play3, .play2, .play1 {
+  display: none;
+}
+
+.profile{
+  margin-top: 8.5em;
+  height: 30em;
+  width: auto;
+}
+
+.about-text{
+  margin-top: 12.5em;
+}
+.icons{
+  margin-top: 3em;
+}
+
+.icon{
+  margin-left: 1.7em;
+}
 
 
 /* 
